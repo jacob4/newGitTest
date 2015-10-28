@@ -1,13 +1,13 @@
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF'.split('');
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.round(Math.random() * 15)];
+// function getRandomColor() {
+//   var letters = '0123456789ABCDEF'.split('');
+//   var color = '#';
+//   for (var i = 0; i < 6; i++) {
+//     color += letters[Math.round(Math.random() * 15)];
 
-  }
-  return color;
-}
+//   }
+//   return color;
+// }
 
 var clickedTime; var createdTime; var reactionTime;
 
@@ -19,14 +19,14 @@ function makeBox() {
 
   setTimeout(function() {
 
-    if(Math.random()>0.5) {
+    // if(Math.random()>0.5) {
 
-      document.getElementById("target").style.borderRadius="100px";
+    //   document.getElementById("target").style.borderRadius="100px";
 
-    }else{
+    // }else{
 
-      document.getElementById("target").style.borderRadius="0";
-    }
+    //   document.getElementById("target").style.borderRadius="0";
+    // }
 
     var top=Math.random();
 
@@ -41,7 +41,7 @@ function makeBox() {
 
     document.getElementById("target").style.left=left+"px";
 
-    document.getElementById("target").style.backgroundColor=getRandomColor();
+    // document.getElementById("target").style.backgroundColor=getRandomColor();
 
     document.getElementById("target").style.display="block";
 
